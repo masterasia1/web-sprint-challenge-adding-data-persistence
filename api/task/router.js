@@ -12,6 +12,8 @@ router.get('/', (req, res, next) => {
       .catch(next)
   })
 
+
+
 //[ ] `[GET] /api/tasks`
  // - Even though `task_completed` is stored as an integer, the API uses booleans when interacting with the client
  // - Each task must include `project_name` and `project_description`

@@ -9,8 +9,10 @@ module.exports = {
  function find() { 
   return db('tasks as t')
     .leftJoin('projects as p', 'p.project_id', 't.project_id')
-    .select('t.task_id','p.project_name','p.project_description');
+    .select('t.task_id','p.project_name','p.project_description','t.task_description');
 }
+
+
 
 
   //[ ] `[GET] /api/tasks`
